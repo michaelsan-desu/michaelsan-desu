@@ -6,3 +6,33 @@ if has_good_credit:
 else:
     down_payment = 0.2 * price
 print(f"Down payment: {down_payment}")
+
+----------------------------------------------------------------------------------------
+
+has_high_income = False
+has_good_income = True
+has_criminal_record = True
+
+if has_high_income or has_good_income and not has_criminal_record:
+    print("Eligible for loan")
+    
+More If statements
+    temperature = 30
+
+if temperature >= 30: (== means =) (if not equal use !=)
+    print("It's a hot day")
+else:
+    print("It's not a hot day")
+    
+----------------------------------------------------------------------------------------
+    
+    name_length = input("What is your name? ")
+
+if len(name_length) <3:
+    print('Name needs to be at least 3 characters long')
+elif len(name_length) >50:
+    print('Name needs to be less than 50 characters long')
+else:
+    print('Name looks good')
+
+
