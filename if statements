@@ -34,5 +34,25 @@ elif len(name_length) >50:
     print('Name needs to be less than 50 characters long')
 else:
     print('Name looks good')
+    
+---------------------------------------------------------------------------------------
+
+weight = input("Weight? ")
+weight_style = input("(L)bs or (K)g: ")
+
+if weight_style == "k" and "KG":
+    kg_weight = int(weight) * 2.2
+    print("You are " + str(kg_weight) + "lb")
+
+elif weight_style == "l" and "lb":
+    lb_weight = int(weight) * 0.4
+    print("You are " + str(lb_weight) + "kg")
+    
+    Better written:
+    weight = int(input('Weight: '))
+unit = input('(L)bs or (K)g: ')
+if unit.upper() == "L":
+    converted = weight * 0.45
+    print(f"You are {converted} kilos")
 
 
