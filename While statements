@@ -1,0 +1,73 @@
+i=1
+while i <=20:
+    print(i)
+    i = i+1
+print("Done")
+
+--------------------------------------------------------------------------
+
+#this code is for a guessing game that loops. Once you get 9 the right answer the games stops/breaks and prints you won!
+#otherwise after 3 wrong guesses you lose
+
+secret_number = 9
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit:
+    guess = int(input('Guess: '))
+    guess_count += 1
+    if guess == secret_number:
+        print('You won!')
+        break
+else:
+    print('You made 3 guesses, you lose!')
+    
+----------------------------------------------------------------------------
+
+#how I wrote the game code:
+
+car_state_run = ('Run')
+car_state_stop = ('Stop')
+car_quit = ('Quit')
+help = ('help')
+
+while 1 :
+   command = input('Enter Command: ')
+   command = command.upper()
+   if command == car_state_run.upper():
+       print('Car is running')
+   elif command == car_state_stop.upper():
+        print('Car is stopped')
+   elif command == help.upper():
+       print('Run - To run the car')
+       print('Stop - To stop the car')
+       print('Quit - To quit the game')
+   elif command == car_quit.upper():
+       print('You have quit the game')
+       break
+   else:
+       print('This does not make sense')
+       
+-----------------------------------------------------------------------------
+
+# How the teacher wrote the game code
+
+command = ""
+
+while True:
+    command = input(">").lower()
+    if command == "start":
+        print("Car Started...")
+    elif command == "stop":
+        print("Car Stopped...")
+    elif command == "help":
+        print("""
+        Stop - ...
+        Run - ....
+        Quit - ...
+        """)
+    elif command == "quit":
+        break
+    else:
+        print("I do not understand that")
+        
+------------------------------------------------------------------------------------
