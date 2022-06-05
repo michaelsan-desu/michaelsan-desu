@@ -71,3 +71,34 @@ while True:
         print("I do not understand that")
         
 ------------------------------------------------------------------------------------
+
+#adding a line that tells you it was already started or stopped to the above code:
+
+command = ""
+
+started = False
+
+while True:
+    command = input(">").lower()                                #USED A ""STARTED = FALSE"" TO GIVE IT A STATE, WHEN THE CODE RUNS IT CAN CHANGE THIS STATE FROM FALSE
+    if command == "start":                                         TO TRUE DEPENDING ON WHAT YOU WANT
+        if started:
+            print("Car is already started...")
+        else:
+            started = True
+            print("Car is running")
+    elif command == "stop":                                    CAN ALSO WRITE THIS CODE LIKE:  
+        if started:                                                                              if not started:
+            started = False                                                                            print("car is already stopped!")
+            print("Car Stopped...")                                                              else:
+        else:                                                                                          started = False
+            print('Car is already Stopped')                                                            print("car is stopped!")
+    elif command == "help":
+        print("""
+        Stop - ...
+        Run - ....
+        Quit - ...
+        """)
+    elif command == "quit":
+        break
+    else:
+        print("I do not understand that")
