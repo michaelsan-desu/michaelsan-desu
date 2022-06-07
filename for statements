@@ -1,0 +1,7 @@
+numbers = (1, 1, 1, 1, 9)
+
+for first_loop in numbers:
+    output = ''
+    for second_loop in range(first_loop):
+        output += 'x'
+    print(output)
